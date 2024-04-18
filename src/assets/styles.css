@@ -1,0 +1,27 @@
+#app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  /* Set the background image */
+  background-image: url('../images/images.jpg'); /* Adjust the path to your background image */
+  /* Cover the entire viewport */
+  width: 100vw;
+  height: 100vh;
+  /* Center the background image */
+  background-position: center;
+  /* Ensure the background image covers the entire viewport */
+  background-size: cover;
+  /* Ensure the background image is fixed so it doesn't scroll with the content */
+  background-attachment: fixed;
+  /* Add additional styles if needed */
+  position: relative; /* Ensure z-index works as expected */
+}
+
+.blur-overlay {
+  position: absolute; /* Position the overlay */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire viewport */
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+  backdrop-filter: blur(10px); /* Apply blur effect to the overlay */
+}
